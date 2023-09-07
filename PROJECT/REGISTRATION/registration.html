@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>REGISTRATION FOR VOLUTEERING</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<link rel="stylesheet" href="assets\fonts\linearicons\style.css">
+		
+	
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<img src="images/image-1.png" alt="" class="image-1">
+					<div class="4u">
+					<div id='loader' hidden>
+						<span class="image fit">
+						
+					</span>
+					 
+					</div>
+					</div>
+					
+					<form  id="register" method="POST" >
+					
+					<h3>REGISTER TO BE A VOLUNTEER</h3>
+					<div class="form-holder">
+						<span class="lnr lnr-user"></span>
+						<input type="text" id="name" class="form-control" placeholder="NAME" required>
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-phone-handset"></span>
+						<input type="text" id="number" class="form-control" placeholder="PHONE NUMBER" required pattern="[6-9]{1}[0-9]{9}">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-envelope"></span>
+						<input type="email" id="email" class="form-control" placeholder="EMAIL" required>
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-location"></span>
+						<input type="text" id="location" class="form-control" placeholder="LOCATION" required>
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-list"></span>
+						<input type="text" id="language" class="form-control" placeholder="SPOKEN LANGUAGE (separate with a comma)" required>
+					</div>
+					<div class="form-holder">
+						
+						<label>Which days of the week you are available to support the class?<br></label>
+						<br>
+						
+						<div class="weekDays-selector">
+						  <input type="checkbox" id="mon" class="weekday" value="MONDAY" />
+						  <label for="mon">Mon</label>
+						  <input type="checkbox" id="tue" class="weekday" value="TUESDAY" />
+						  <label for="tue">Tue</label>
+						  <input type="checkbox" id="wed" class="weekday" value="WEDNESDAY" />
+						  <label for="wed">Wed</label>
+						  <input type="checkbox" id="thu" class="weekday" value="THURSDAY"/>
+						  <label for="thu">Thu</label>
+						  <input type="checkbox" id="fri" class="weekday" value="FRIDAY" />
+						  <label for="fri">Fri</label>
+						  <input type="checkbox" id="sat" class="weekday" value="SATURDAY" />
+						  <label for="sat">Sat</label>
+						  <input type="checkbox" id="sun" class="weekday" value="SUNDAY" />
+						  <label for="sun">Sun</label>
+						</div>
+						</div>
+
+					<button onclick="process()">
+						<span>Register</span>
+					</button>
+				</form>
+				<img src="images/image-2.png" alt="" class="image-2">
+			</div>
+			<div class="lds-heart" id="lds-heart" hidden="hidden"><div></div></div>
+			
+		</div>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/registration.js"></script>
+		
+	</body>
+</html>
